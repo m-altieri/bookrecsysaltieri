@@ -2,7 +2,7 @@
 
 return [ 
 		// Facebook Token Test movierecsys
-		'facebook_token' => 'EAACkzauyGUUBAN3ZBzEcAnNWUZAOwPAlTO65RcHJu4pgIkVXD6O4zxzmyltOt3dqIgkHntKbgoG2Dmqda9MKxkEUu6H1wC7bz9LA7YGSZB6TMSfQ17HxqfIZCz7BzFoiQKBbYsK7M7fymFeFbZCjZCSqT11ui0oFmBMZCszC3UlcwZDZD',
+		'facebook_token' => 'EAACXx3FvtrkBAKdQifqIbZBFpwTkimCsYPLe1I1AGOwoj0EoqkAlCcwASHDacGJzUfonRzckCIdD8CTHjMA7sgFL7DPJG4b1hvab172bexF6cGrpaXGYl50E4cOaRqN5ZB3MEgJ82BBBXFypQZBnnlLNx42deQSUlJaGL6neAZDZD',
 		// Telegram Token TestMovieRecSys
 		'telegram_token' => '480345760:AAEJLUDpd1HRwOnAxqfQG_p1Ej7N77ILrpk',
 		// The timezone setting, Guzzle suggests having this for proper requests/responses
