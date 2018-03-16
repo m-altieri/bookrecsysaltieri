@@ -1,22 +1,5 @@
 <?php
 use GuzzleHttp\Client;
-<<<<<<< HEAD
-
-function getAuxReply($url) {
-	
-	$baseUrl = explode('?', $url)[0];
-	$stringGetRequest = '?' . explode('?', $url)[1];
-	
-	$client = new Client ( [
-			'base_uri' => $baseUrl
-	] );
-	
-	file_put_contents ( "php://stderr", '[sendMessageToServer]' . $baseUrl . $stringGetRequest . PHP_EOL );
-	
-	$response = $client->request ( 'GET', $stringGetRequest );
-	$bodyMsg = $response->getBody ()->getContents ();
-	$data = json_decode ( $bodyMsg, true );
-=======
 
 function getAuxReply($auxAPI) {
 	file_put_contents("php://stderr", "auxAPI: \n" . print_r($auxAPI, true) . PHP_EOL);
@@ -49,7 +32,6 @@ function getAuxReply($auxAPI) {
 	
 	$bodyMsg = $response->getBody()->getContents();
 	$data = json_decode($bodyMsg, true);
->>>>>>> branch 'master' of https://github.com/m-altieri/bookrecsysaltieri.git
 	
 	return $data;
 }
