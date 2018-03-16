@@ -1,5 +1,5 @@
 <?php
-
+	
 	require 'vendor/autoload.php';
 	$config = require '/app/recsysbot/config/movierecsysbot-config.php';
 	
