@@ -45,14 +45,9 @@ function messageDispatcher($platform, $chatId, $messageId, $date, $text, $firstn
 	
 	// Controllo per eventuale chiamata ausiliaria
 	$auxAPI = $data['auxAPI'];
-<<<<<<< HEAD
-	if ($auxAPI) {
-		file_put_contents("php://stderr", "Invio richiesta aux a " . $auxAPI . PHP_EOL);
-=======
 
 	if ($auxAPI) {		
 		file_put_contents("php://stderr", "Invio richiesta aux a " . $auxAPI['apiURL'] . PHP_EOL);
->>>>>>> branch 'master' of https://github.com/m-altieri/bookrecsysaltieri.git
 		
 		// Ottiene array già decodificato
 		$auxData = getAuxReply($auxAPI);
