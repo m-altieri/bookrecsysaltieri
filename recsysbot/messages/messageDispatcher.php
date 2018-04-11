@@ -24,7 +24,7 @@ function messageDispatcher($platform, $chatId, $messageId, $date, $text, $firstn
 	
 	// Invio i messaggi e la eventuale keyboard all'utente
 	foreach ($messages as $message) {
-
+		
 		file_put_contents("php://stderr", "[messageDispatcher] Sending message to user:\n" .
 				"chat_id: " . $chatId . "\ntext: " . $message['text'] . "\nphoto: " . $message['photo']. 
 				"\nlink: " . $message['link'] . "\nkeyboard: " . print_r($markup, true) . PHP_EOL);
@@ -47,6 +47,9 @@ function messageDispatcher($platform, $chatId, $messageId, $date, $text, $firstn
 	$auxAPI = $data['auxAPI'];
 
 	if ($auxAPI) {		
+		
+		$platform->sendChatAction($chatId, $platform->getTypingAction());
+		
 		file_put_contents("php://stderr", "Invio richiesta aux a " . $auxAPI['apiURL'] . PHP_EOL);
 		
 		// Ottiene array già decodificato
